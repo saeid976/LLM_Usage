@@ -1,0 +1,23 @@
+version: "3.5"
+
+services:
+
+  llm_brain_service:
+    image: llm_brain_service:latest
+    build:
+      context: LLM_app
+    container_name: llm_brain_service
+    ports:
+      - 9010:8080
+    networks:
+      - llm_brain_service_net
+    volumes:
+      - ./LLM_app:/app
+      - /etc/timezone:/etc/timezone:ro 
+      - /etc/localtime:/etc/localtime:ro
+
+networks:
+
+  llm_brain_service_net:
+    name: llm_brain_service_net
+    driver: bridge
