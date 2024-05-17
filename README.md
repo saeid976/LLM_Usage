@@ -33,7 +33,7 @@ To get started with the Real Estate Consultant LLM Microservice, follow these st
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/real-estate-consultant-llm.git
+    git clone https://github.com/saeid976/LLM_Usage.git
     cd real-estate-consultant-llm
     ```
 
