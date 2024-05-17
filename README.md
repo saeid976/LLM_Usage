@@ -34,15 +34,17 @@ To get started with the Real Estate Consultant LLM Microservice, follow these st
 1. **Clone the repository**:
     ```bash
     git clone https://github.com/saeid976/LLM_Usage.git
-    cd real-estate-consultant-llm
     ```
 
-2. **Build and start the Docker containers**:
+2. **Build the docker image**:
     ```bash
-    docker-compose up --build
+    docker compose --build
     ```
+3. **Run the microservice:**
+   ```bash
+   docker compose up -d
 
-The FastAPI server will be up and running, typically on `http://localhost:8000`.
+The FastAPI server will be up and running, typically on `http://localhost:8000/docs`. 
 
 ## Usage
 
